@@ -5,18 +5,18 @@ body{
     background-size: cover;
     min-height: 90vh;
     background-color: #00001f;
-    
 }
-.container-logo{
-    background-color: rgba(0, 0, 31, 0.8);
-    border: 1px solid #b1a7a7;
-    border-radius: 50px;
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+}
+ .container-logo{
     margin-top: 60px;
-    margin-left: 90px;
-    margin-right: 90px;
     margin-bottom: 60px;
-    box-shadow:  2px 4.3px rgba(242, 242, 242, 0.6);
-}
+ }
 .logo-image-header{
     margin-top: 50px;
     width: 300px;
@@ -111,7 +111,6 @@ a:hover{
     background-color: rgba(0, 0, 31, 0.8);
     border-bottom: 1px solid #F2F2F2;
     border-radius: 5px;
-    margin-top: 60px;
     margin-left: 90px;
     margin-right: 90px;
     margin-bottom: 60px;
@@ -136,24 +135,14 @@ li{
     list-style: none;
     margin-top: 10px;
 }
-.transparent{
-    background-color: rgba(1, 0, 34, 0.7);
-    padding: 20px;
-    margin-top: 60px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 100px;
-    border-radius: 50px;
-    box-shadow: 6px 6px #A448DD;
-    
-}
 #container{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 .paragraph{
-    margin-top: 35px;
+    margin-top: 15px;
+    text-align: center;
+    margin: 10px;
 }
 .par-hello{
     color: #F2F2F2;
@@ -162,8 +151,7 @@ li{
     font-style: normal;
     font-family: "Montserrat Alternates", sans-serif;
     letter-spacing: 5px;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 .name{
     color: #F2F2F2;
@@ -185,7 +173,8 @@ span{
 .frontend{
     color: #F2F2F2;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    margin: 10px;
 }
 .comp{
     align-items: center;
@@ -207,23 +196,7 @@ span{
     letter-spacing: 2px;
     margin: 40px;
 }
-.text-about{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
- }
- .text-about-reverse{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
- }
- .design{
-    text-align: end;
- }
- .idea-of-project{
+.idea-of-project{
     background-color: #F2F2F2;
     color: #00A9C7;
     font-family: "Montserrat", sans-serif;
@@ -231,8 +204,9 @@ span{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     border-radius: 10px;
     border: 1px solid #00A9C7;
     box-shadow: 4px 4px 4px #00A9C7;
@@ -290,7 +264,7 @@ span{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
     border-radius: 30px; 
 }
@@ -394,9 +368,12 @@ span{
      margin-left: -40px;
  }
 #slide{
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px #00A9C7;
-    border: 1px solid #00A9C7;
+    background-color: #99446c;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
     width: 800px;
 }
 .message{
@@ -551,6 +528,10 @@ a{
 hr{
     border: 1px solid #fef7f7;
 }
+.image-about{
+    display: flex;
+    justify-content: center;
+}
 
 
 @media all and ( max-width: 800px){
@@ -644,9 +625,6 @@ hr{
     .back, .next{
     width: 35px;
    }
-  /* .next{
-    width: 25px;
-  }  */
  .message{
     font-size: 30px;
  }

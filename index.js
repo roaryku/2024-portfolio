@@ -171,32 +171,12 @@ gsap.from('.frontend', {
 })
 gsap.from('.idea-of-project', {
   scrollTrigger: '.idea-of-project', 
-  duration: 2.5, ease: "power2.in", stagger: 1, delay: 2.5, opacity:0
+  duration: 2.5, ease: "power2.in", stagger: 1, delay: 2, opacity:0
 })
 
 gsap.from('.btnMail', {
   scrollTrigger: '.btnMail', 
   duration: 2, ease: "power2.in", stagger: 1, delay: 2.5, opacity:0
-})
-gsap.from('.design', {
-    scrollTrigger: '.design', 
-    duration: 1.5, ease: "power1", stagger: 1, delay: 1.5
-})
-gsap.from('.image-about-one', {
-    scrollTrigger: '.image-about-one', 
-     duration: 1.5, ease: "power4", stagger: 1, delay: 1.5
-})
-gsap.from('.image-about-two', {
-    scrollTrigger: '.image-about-two', 
-     duration: 1.5, ease: "power4", stagger: 1, delay: 1.5
-})
-gsap.from('.text-about', {
-  scrollTrigger: '.text-about', 
-  y: 100, duration: 1.5, ease: "power4", stagger: 1, delay: 1, opacity:0
-})
-gsap.from('.text-about-reverse', {
-  scrollTrigger: '.text-about-reverse', 
-  y: 100, duration: 1.5, ease: "power4", stagger: 1, delay: 1, opacity:0
 })
 gsap.from('.animSkill-left', {
   scrollTrigger: '.animSkill-left', 
@@ -215,7 +195,7 @@ gsap.from('.text-skills', {
 })
 gsap.from('.label-container', {
   scrollTrigger: '.label-container', 
-  y: 100, duration: 1.5, ease: "power2", stagger: 1, delay: 1, opacity:0
+ duration: 1.5, ease: "power2", stagger: 1, delay: 1, opacity:0
 })
 gsap.from('.logoGsapTwo', {
   scrollTrigger: '.logoGsapTwo', 

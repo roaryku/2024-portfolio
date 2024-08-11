@@ -701,6 +701,15 @@ hr{
        .back, .next{
         width: 25px;
        }
+
+.input-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-contect: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
 }
 
 

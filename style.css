@@ -363,7 +363,7 @@ span{
     position: absolute;
      margin-left: 10px;
  }
- .next{
+.next{
      position: absolute;
      margin-left: -40px;
  }
@@ -485,7 +485,6 @@ a{
 .submit{
     padding: 9px;
     margin-top: 15px;
-    margin-left: 5px;
     font-size: 15px;
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
@@ -502,6 +501,7 @@ a{
 .input-button{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 #header-projects{
@@ -706,16 +706,18 @@ hr{
         margin-left: -50px;
         width: 25px;
        }
+    .input-subscribe{
+        text-align: center;
+    }
+    .submit{
+        text-align: center;
+    }
+    .frontend{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+}
 
-.input-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-contect: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-}
 
 @media all and ( max-width: 400px){
     .image-one{
@@ -755,10 +757,14 @@ hr{
         width: 25px;
        }
     .input-subscribe{
-        margin-left: 55px;
+        margin-left: 45px;
     }
     .submit{
-        margin-left: 115px;
+        margin-left: 95px;
+    }
+    .image-two{
+        margin-left: 70px;
+        margin-bottom: 10px;
     }
 }
 

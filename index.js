@@ -134,7 +134,6 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
   });
-
  // ANIMATION GSAP
 
   gsap.to(".name", {
@@ -144,26 +143,17 @@ particlesJS("particles-js", {
   })
 gsap.from('.aboutMe', {
   scrollTrigger: '.aboutMe',
-  y: 60, duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0, delay: .5
+  y: 60, duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0
 })
 
 gsap.from('.myProjects', {
   scrollTrigger: '.myProjects',
-  y: 60, duration: 1, ease:"power2.in", stagger: 1, opacity: 0, delay: 1
+  duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0, delay: 1
 })
 
 gsap.from('.myCertificates', {
   scrollTrigger: '.myCertificates',
-  y: 60, duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0, delay: .5
-})
-
-gsap.from('.btnGsap', {
-    scrollTrigger: '.btnGsap', 
-     duration: 3.5, ease: "power3.Out", stagger: 1, delay: 2.5
-})
-gsap.from('.comp', {
-    scrollTrigger: '.comp', 
-    duration: 3.5, ease: "power3.Out", stagger: 1, delay: 2.5, rotation: 180
+  duration: 1, ease:"power2.inOut", stagger: 1, opacity: 0,
 })
 gsap.from('.frontend', {
     scrollTrigger: '.frontend', 
@@ -171,7 +161,7 @@ gsap.from('.frontend', {
 })
 gsap.from('.idea-of-project', {
   scrollTrigger: '.idea-of-project', 
-  duration: 2.5, ease: "power2.in", stagger: 1, delay: 2, opacity:0
+  duration: .5, ease: "power2.in", stagger: 1, opacity:0
 })
 
 gsap.from('.btnMail', {
@@ -195,7 +185,7 @@ gsap.from('.text-skills', {
 })
 gsap.from('.label-container', {
   scrollTrigger: '.label-container', 
- duration: 1.5, ease: "power2", stagger: 1, delay: 1, opacity:0
+   duration: 1.5, ease: "power2", stagger: 1, delay: 1, opacity:0
 })
 gsap.from('.logoGsapTwo', {
   scrollTrigger: '.logoGsapTwo', 
@@ -211,11 +201,11 @@ gsap.from('.image-decor', {
 })
 gsap.from('.input-button', {
   scrollTrigger: '.input-button', 
-  y: 100, duration: 2, ease: "power2", stagger: 1, delay: 1.5, opacity:0
+   duration: 2, ease: "power2.inOut", stagger: 1, opacity:0
 })
 gsap.from('.flip-card', {
   scrollTrigger: '.flip-card', 
-  duration: 2, ease: "power2.in", stagger: 1, delay: 1.5, opacity:0
+  duration: 1, ease: "power2.inOut", stagger: 1, opacity:0
 })
 gsap.from('#container-certificates', {
   scrollTrigger: '#container-certificates', 

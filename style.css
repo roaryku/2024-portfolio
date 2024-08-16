@@ -698,7 +698,12 @@ hr{
     #slide{
         width: 300px;
        }
-       .back, .next{
+    .back{
+        margin-left: 15px;
+        width: 25px;
+       }
+    .next{
+        margin-left: -30px;
         width: 25px;
        }
 

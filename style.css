@@ -122,7 +122,6 @@ a:hover{
     display: inline;
     margin-top: 3px;
     margin-left: 10px;
-    margin-bottom: 10px;
     float: left;
 }
 ul{
@@ -174,8 +173,9 @@ span{
 .frontend{
     color: #F2F2F2;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size:20px;
     margin: 10px;
+    font-weight: lighter;
 }
 .comp{
     align-items: center;
@@ -228,56 +228,6 @@ span{
     width: 300px;
     height: 280px;
     border-radius: 30px; 
-}
-.linkToProject{
-    text-decoration: none;
-    color:#F2F2F2;
-    font-family: "Montserrat Alternates", sans-serif;
-    text-align: center;
-    font-size: 27px;
-}
-.flip-card {
-    background-color: #F2F2F2;
-    box-shadow: 5px 5px 5px #E154E4;
-    padding: 6px;
-    margin-top: 50px;
-    width: 300px;
-    height: 270px;
-    perspective: 1000px;
-    border-radius: 30px;  
-}
-.flip-card:hover{
-    box-shadow: 2px 2px 2px 2px #F2F2F2;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border-radius: 30px; 
-}
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-    border-radius: 30px; 
-}
-.flip-card-back {
-    background-color: #E154E4;
-    color: white;
-    transform: rotateY(180deg);
-    border-radius: 30px; 
-}
-.proj-four{
-    font-family: "Montserrat Alternates", sans-serif; 
-    margin-top: 50px;
 }
 .par-four{
     font-family: "Montserrat Alternates", sans-serif;
@@ -465,9 +415,6 @@ span{
     height: 40px;
     margin-top: 25px;
 }
-a{
-    text-decoration: none;
-}
 .headerContainer{
     display: flex;
     justify-content: space-around;
@@ -532,6 +479,54 @@ hr{
 .image-about{
     display: flex;
     justify-content: center;
+}
+.proj-container{
+    background-color: #F2F2F2;
+    box-shadow: 5px 0px 3px #E154E4;
+    padding: 6px;
+    margin-top: 50px;
+    width: 220px;
+    height: 360px;
+    border-radius: 15px; 
+    text-align: center;
+}
+.proj-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px; 
+}
+.proj_head{
+    color: #E154E4;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.proj-par{
+     color: #4971B0; 
+     font-family: "Montserrat Alternates", sans-serif;
+     font-style: italic;
+     margin-top: 10px;
+}
+.btn-project{
+    background-color: #F2F2F2;
+    color: #00A9C7;
+    border: 1px solid #00A9C7;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+   
+}
+.btn-project:hover{
+    box-shadow: 2px 2px 2px 0px #025FA5;
+}
+.proj-link{
+    color: #00A9C7;
+}
+.proj-link:hover{
+    color:#025FA5;
 }
 
 
@@ -666,7 +661,11 @@ hr{
     border-radius: 5px;
     border: none;
     box-shadow: 3px 3px  #12C2E8;
-}  
+} 
+
+.frontend{
+    font-size:15px;
+}
    
 }
 
@@ -763,7 +762,11 @@ hr{
     .submit{
         margin-left: 95px;
     }
-  }
+    .image-two{
+        margin-left: 70px;
+        margin-bottom: 10px;
+    }
+}
 
 
 

@@ -143,7 +143,7 @@ particlesJS("particles-js", {
   })
 gsap.from('.aboutMe', {
   scrollTrigger: '.aboutMe',
-  y: 60, duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0
+  y: 60, duration: 1, ease:"power2.inOut", stagger: 1, opacity: 0, delay: .5
 })
 
 gsap.from('.myProjects', {
@@ -157,16 +157,16 @@ gsap.from('.myCertificates', {
 })
 gsap.from('.frontend', {
     scrollTrigger: '.frontend', 
-    duration: 1.5, ease: "power2.in", stagger: 1, delay: 1.5, opacity:0
+    duration: .5, ease: "power2.in", stagger: 1, delay: .5, opacity:0
 })
 gsap.from('.idea-of-project', {
   scrollTrigger: '.idea-of-project', 
-  duration: .5, ease: "power2.in", stagger: 1, opacity:0
+  duration: 1.5, ease: "power2.in", stagger: 1, opacity:0, delay: 2.5
 })
 
 gsap.from('.btnMail', {
   scrollTrigger: '.btnMail', 
-  duration: 2, ease: "power2.in", stagger: 1, delay: 2.5, opacity:0
+  duration: 1, ease: "power2.inOut", stagger: 1, delay: 1.5, opacity:0
 })
 gsap.from('.animSkill-left', {
   scrollTrigger: '.animSkill-left', 
@@ -203,12 +203,12 @@ gsap.from('.input-button', {
   scrollTrigger: '.input-button', 
    duration: 2, ease: "power2.inOut", stagger: 1, opacity:0
 })
-gsap.from('.flip-card', {
-  scrollTrigger: '.flip-card', 
+gsap.from('.proj-container', {
+  scrollTrigger: '.proj-container', 
   duration: 1, ease: "power2.inOut", stagger: 1, opacity:0
 })
 gsap.from('#container-certificates', {
   scrollTrigger: '#container-certificates', 
-  duration: 2, ease: "power2.in", stagger: 1, delay: 1.5, opacity:0
+  duration: .5, ease: "power2.inOut", stagger: 1, delay: .5, opacity:0
 })
 

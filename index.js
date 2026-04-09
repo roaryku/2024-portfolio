@@ -137,82 +137,88 @@ particlesJS("particles-js", {
 
  // ANIMATION GSAP
 
+const homeIntro = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+homeIntro
+  .from('#logo .logo-image-header', { y: -12, opacity: 0, duration: .95 })
+  .from('#logo h1', { y: 12, opacity: 0, duration: .85 }, '-=.3')
+  .from('#logo .par', { y: 10, opacity: 0, duration: .8 }, '-=.25')
+  .from('#logo .cta', { y: 8, opacity: 0, duration: .65, stagger: .05 }, '-=.2')
+  .from('#logo .header_btn .btnMail', { y: 8, opacity: 0, duration: .75 }, '-=.2');
+
   gsap.to(".name", {
     
     text: "My name is Rodika",
-    duration: 4, repeat: -1, repeatDelay: 3, ease: "none", yoyo: true, delay: 3
+    duration: 4.2, repeat: -1, repeatDelay: 3.1, ease: "none", yoyo: true, delay: 2.8
   })
 gsap.from('.aboutMe', {
-  scrollTrigger: '.aboutMe',
-  y: 60, duration: 1, ease:"power2.inOut", stagger: 1, opacity: 0, delay: .5
+  scrollTrigger: { trigger: '.aboutMe', start: 'top 85%' },
+  y: 24, duration: 1.55, ease:"power2.out", stagger: .1, opacity: 0, delay: 0
 })
 
 gsap.from('.myProjects', {
-  scrollTrigger: '.myProjects',
-  duration: 1.5, ease:"power2.in", stagger: 1, opacity: 0, delay: 1
+  scrollTrigger: { trigger: '.myProjects', start: 'top 85%' },
+  y: 16, duration: 1.35, ease:"power2.out", stagger: .1, opacity: 0, delay: 0
 })
 
 gsap.from('.myCertificates', {
-  scrollTrigger: '.myCertificates',
-  duration: 1, ease:"power2.inOut", stagger: 1, opacity: 0,
+  scrollTrigger: { trigger: '.myCertificates', start: 'top 85%' },
+  y: 16, duration: 1.35, ease:"power2.out", stagger: .1, opacity: 0,
 })
 gsap.from('.frontend', {
-    scrollTrigger: '.frontend', 
-    duration: .5, ease: "power2.in", stagger: 1, delay: .5, opacity:0
+    scrollTrigger: { trigger: '.frontend', start: 'top 86%' }, 
+    y: 14, duration: 1.2, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.idea-of-project', {
-  scrollTrigger: '.idea-of-project', 
-  duration: 1.5, ease: "power2.in", stagger: 1, opacity:0, delay: 2.5
+  scrollTrigger: { trigger: '.idea-of-project', start: 'top 86%' }, 
+  y: 14, duration: 1.3, ease: "power2.out", stagger: .1, opacity:0, delay: 0
 })
 
 gsap.from('.btnMail', {
-  scrollTrigger: '.btnMail', 
-  duration: 1, ease: "power2.inOut", stagger: 1, delay: 1.5, opacity:0
+  scrollTrigger: { trigger: '.btnMail', start: 'top 88%' }, 
+  y: 12, duration: 1.2, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.animSkill-left', {
-  scrollTrigger: '.animSkill-left', 
-  x: -100, duration: 1.5, ease: "power1", stagger: 1, delay: 1, opacity:0
+  scrollTrigger: { trigger: '.animSkill-left', start: 'top 86%' }, 
+  x: -44, duration: 1.35, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.animSkill-right', {
-  scrollTrigger: '.animSkill-right', 
-  x: 100, duration: 1.5, ease: "power1", stagger: 1, delay: 1, opacity:0
+  scrollTrigger: { trigger: '.animSkill-right', start: 'top 86%' }, 
+  x: 44, duration: 1.35, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.skills-icon', {
   scrollTrigger: '.skills-icon', 
-  rotation: 360, repeat: -1, duration: 3, delay: 1, ease: "power2.inOut"
+  rotation: 360, repeat: -1, duration: 3, delay: .2, ease: "power2.inOut"
 })
 gsap.from('.text-skills', {
-  y: 60, duration: .2, ease: "power1", stagger: 1, delay: .2, opacity:0
+  y: 16, duration: .9, ease: "power2.out", stagger: .07, delay: 0, opacity:0
 })
-gsap.from('.label-container', {
-  scrollTrigger: '.label-container', 
-   duration: 1.5, ease: "power2", stagger: 1, delay: 1, opacity:0
+gsap.from('.header-input .label-container', {
+  scrollTrigger: { trigger: '.header-input', start: 'top 88%' }, 
+  y: 10, duration: 1.25, ease: "power2.inOut", stagger: .22, delay: 0, opacity:0
 })
 gsap.from('.logoGsapTwo', {
-  scrollTrigger: '.logoGsapTwo', 
-  y: 100, duration: 2, ease: "power2", stagger: 1, delay: 2, opacity:0
+  scrollTrigger: { trigger: '.logoGsapTwo', start: 'top 86%' }, 
+  y: 32, duration: 1.5, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.images-decor', {
   scrollTrigger: '.images-decor', 
-  rotation: 360, repeat: -1, duration: 3, delay: 1, ease: "power2.inOut"
+  rotation: 360, repeat: -1, duration: 3, delay: .2, ease: "power2.inOut"
 })
 gsap.from('.image-decor', {
   scrollTrigger: '.image-decor', 
-  rotation: 360, repeat: -1, duration: 3, delay: 1, ease: "power2.inOut"
+  rotation: 360, repeat: -1, duration: 3, delay: .2, ease: "power2.inOut"
 })
 gsap.from('.input-button', {
-  scrollTrigger: '.input-button', 
-   duration: 2, ease: "power2.inOut", stagger: 1, opacity:0
+  scrollTrigger: { trigger: '.input-button', start: 'top 88%' }, 
+  y: 8, duration: 1.55, ease: "power2.inOut", stagger: .05, delay: 0, opacity:0
 })
 gsap.from('.proj-container', {
-  scrollTrigger: '.proj-container', 
-  duration: 1, ease: "power2.inOut", stagger: 1, opacity:0
+  scrollTrigger: { trigger: '.proj-container', start: 'top 88%' }, 
+  y: 14, duration: 1.2, ease: "power2.out", stagger: .08, delay: 0, opacity:0
 })
 gsap.from('#container-certificates', {
-  scrollTrigger: '#container-certificates', 
-  duration: .5, ease: "power2.inOut", stagger: 1, delay: .5, opacity:0
+  scrollTrigger: { trigger: '#container-certificates', start: 'top 88%' }, 
+  y: 14, duration: 1.15, ease: "power2.out", stagger: .08, delay: 0, opacity:0
 })
-
-
-
 

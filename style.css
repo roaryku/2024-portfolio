@@ -449,8 +449,18 @@ span{
 .input-button{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    width: 100%;
+}
+.input-button form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
 }
 #header-projects{
     display: flex;
@@ -690,11 +700,6 @@ hr{
     display: block;
     width: 80%;
 	margin-bottom: 10px;
-    color: #010021;
-    font-family: "Montserrat", sans-serif;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 3px 3px  #12C2E8;
 } 
 
 .frontend{
@@ -790,16 +795,8 @@ hr{
         margin-left: -50px;
         width: 25px;
        }
-    .input-subscribe{
-        margin-left: 45px;
-    }
-    .submit{
-        margin-left: 95px;
-    }
     .image-two{
         width: 130px;
-        margin: 0;
-        padding: 0;
     }
 }
 

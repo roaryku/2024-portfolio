@@ -537,6 +537,24 @@ hr{
         margin-right: 30px;
         box-shadow:  2px 2.5px rgba(242, 242, 242, 0.6);
     }
+    .container-header .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .image-two{
+        float: none;
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+    .navbar-toggler{
+        margin-left: 12px;
+    }
     .logo-image-header{
         margin-top: 50px;
         width: 250px;
@@ -763,8 +781,9 @@ hr{
         margin-left: 95px;
     }
     .image-two{
-        margin-left: 70px;
-        margin-bottom: 10px;
+        width: 130px;
+        margin: 0;
+        padding: 0;
     }
 }
 

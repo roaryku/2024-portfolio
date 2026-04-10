@@ -541,7 +541,7 @@ hr{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     .image-two{
         float: none;
@@ -554,6 +554,22 @@ hr{
     }
     .navbar-toggler{
         margin-left: 12px;
+    }
+    .container-header .navbar-collapse{
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    .container-header .ul{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .container-header .nav-item{
+        width: 100%;
+        margin-top: 6px;
     }
     .logo-image-header{
         margin-top: 50px;

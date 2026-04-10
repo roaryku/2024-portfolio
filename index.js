@@ -174,8 +174,8 @@ gsap.from('.idea-of-project', {
   y: 14, duration: 1.3, ease: "power2.out", stagger: .1, opacity:0, delay: 0
 })
 
-gsap.from('.btnMail', {
-  scrollTrigger: { trigger: '.btnMail', start: 'top 88%' }, 
+gsap.from('#about .btnMail, #contact .btnMail', {
+  scrollTrigger: { trigger: '#about .btnMail', start: 'top 88%' }, 
   y: 12, duration: 1.2, ease: "power2.out", stagger: .1, delay: 0, opacity:0
 })
 gsap.from('.animSkill-left', {
